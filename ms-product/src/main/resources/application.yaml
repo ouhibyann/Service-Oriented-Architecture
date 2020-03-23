@@ -1,0 +1,37 @@
+
+server:
+  port: ${APP_PORT:8060}
+  servlet:
+    context-path: /ms-product
+    
+app:
+  keystore:
+    file: "C:/Users/moi/Desktop/Architecture_orientee_service/OUHIB_TP_SOA/ms-membership/src/main/resources/secrets/server.p12"
+    alias: "esipe"
+    password: "esipe"
+   
+management:
+  security:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      #base-path: "/"
+      exposure:
+        include: info, health, metrics, prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+      atlas:
+        enabled: false
+
+security:
+  basic:
+    enable: false
+    
+    

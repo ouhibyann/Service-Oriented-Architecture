@@ -7,13 +7,22 @@ This project is a webapp microservices project with the following components :
  because it is used by ms-basket to get a list of products in which one can select to add to its cart.
 The 'ms-basket' and 'ms-membership' are both API and require a JWT token authentication to execute requests.
 
-#Docker generate and run
+#Docker build and run
 
-TODO: Describe the installation process
+    * ms-basket : 
+        docker build -t ms-basket .
+        docker run -d -p 9090:8090 ms-basket 
+    * ms-membership :
+        docker build -t ms-membership
+        docker run -d -p 9070:8070 ms-membership
+    * ms-product :
+        docker build -t ms-product
+        docker run -d -p 9060:8060 ms-product
 
 #Curl API with Postman
 
 Packages will be provided - external - with the project to test the all the services via Postman.
+Warning !!! The provided requests are written with my own docker deamon IP address (192.168.99.100), you should replace it with your own IP address.
 
 #Running Tests
 

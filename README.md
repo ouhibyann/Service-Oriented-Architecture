@@ -1,4 +1,4 @@
-#OUHIB_TP_SOA
+# OUHIB_SOA
 
 This project is a webapp microservices project with the following components :
 - "ms-membership", allowing to register, update, select and delete a client thanks to an API with JSON format request.
@@ -7,7 +7,10 @@ This project is a webapp microservices project with the following components :
  because it is used by ms-basket to get a list of products in which one can select to add to its cart.
 The 'ms-basket' and 'ms-membership' are both API and require a JWT token authentication to execute requests.
 
-#Docker build and run
+For each micro-services, you will find a Dockerfile to run them in separated container; also each services is provided with a Class diagram.
+A component diagram is also available for a better understanding of the whole application.
+
+# Docker build and run
 
     * ms-basket : 
         docker build -t ms-basket .
@@ -19,16 +22,16 @@ The 'ms-basket' and 'ms-membership' are both API and require a JWT token authent
         docker build -t ms-product
         docker run -d -p 9060:8060 ms-product
 
-#Curl API with Postman
+# Curl API with Postman
 
 Packages will be provided - external - with the project to test the all the services via Postman.
 Warning !!! The provided requests are written with my own docker deamon IP address (192.168.99.100), you should replace it with your own IP address.
 
-#Running Tests
+# Running Tests
 
 There are no tests to be run yet.
 
-#Git
+# Git
 
   * Create your feature branch: `git checkout -b my-new-feature` 
   * Commit your changes: `git commit -am 'Add some feature'` 

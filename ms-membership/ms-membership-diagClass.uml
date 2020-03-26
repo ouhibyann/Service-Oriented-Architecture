@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="148.0">com.esipe.ms.security.InfraSettings</node>
+    <node x="184.0" y="148.0">com.esipe.ms.resource.UserResource</node>
+    <node x="0.0" y="0.0">com.esipe.ms.security.JWTTokenGenerator</node>
+    <node x="177.0" y="222.0">com.esipe.ms.model.SimpleToken</node>
+    <node x="0.0" y="74.0">com.esipe.ms.security.JWTTokenValidator</node>
+    <node x="212.0" y="74.0">com.esipe.ms.repository.UserRepository</node>
+    <node x="170.0" y="296.0">com.esipe.ms.model.User</node>
+    <node x="0.0" y="296.0">com.esipe.ms.service.UserService</node>
+    <node x="0.0" y="222.0">com.esipe.ms.model.Authenticate</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="384.0" y="77.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

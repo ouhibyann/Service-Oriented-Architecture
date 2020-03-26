@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="184.0" y="148.0">com.esipe.ms.model.Basket</node>
+    <node x="0.0" y="0.0">com.esipe.ms.repository.BasketRepository</node>
+    <node x="0.0" y="74.0">com.esipe.ms.resource.BasketResource</node>
+    <node x="0.0" y="148.0">com.esipe.ms.service.BasketService</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="384.0" y="77.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

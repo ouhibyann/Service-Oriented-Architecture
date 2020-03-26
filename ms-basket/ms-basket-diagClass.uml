@@ -3,14 +3,49 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="184.0" y="148.0">com.esipe.ms.model.Basket</node>
-    <node x="0.0" y="0.0">com.esipe.ms.repository.BasketRepository</node>
-    <node x="0.0" y="74.0">com.esipe.ms.resource.BasketResource</node>
-    <node x="0.0" y="148.0">com.esipe.ms.service.BasketService</node>
+    <node x="100.24999999999999" y="0.0">com.esipe.ms.model.Basket</node>
+    <node x="0.0" y="79.0">com.esipe.ms.repository.BasketRepository</node>
+    <node x="84.67857142857142" y="237.0">com.esipe.ms.resource.BasketResource</node>
+    <node x="55.749999999999986" y="158.0">com.esipe.ms.service.BasketService</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="384.0" y="77.5" />
+  <edges>
+    <edge source="com.esipe.ms.service.BasketService" target="com.esipe.ms.repository.BasketRepository">
+      <point x="-34.75" y="-14.5" />
+      <point x="90.49999999999999" y="133.0" />
+      <point x="80.0" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.esipe.ms.resource.BasketResource" target="com.esipe.ms.service.BasketService">
+      <point x="-48.66666666666666" y="-14.5" />
+      <point x="109.01190476190476" y="212.0" />
+      <point x="90.49999999999999" y="212.0" />
+      <point x="-34.75" y="14.5" />
+    </edge>
+    <edge source="com.esipe.ms.repository.BasketRepository" target="com.esipe.ms.model.Basket">
+      <point x="40.0" y="-14.5" />
+      <point x="120.0" y="54.0" />
+      <point x="134.0" y="54.0" />
+      <point x="-11.25" y="14.5" />
+    </edge>
+    <edge source="com.esipe.ms.service.BasketService" target="com.esipe.ms.model.Basket">
+      <point x="34.75" y="-14.5" />
+      <point x="160.0" y="133.0" />
+      <point x="170.49999999999997" y="133.0" />
+      <point x="170.49999999999997" y="54.0" />
+      <point x="156.5" y="54.0" />
+      <point x="11.25" y="14.5" />
+    </edge>
+    <edge source="com.esipe.ms.resource.BasketResource" target="com.esipe.ms.model.Basket">
+      <point x="48.66666666666666" y="-14.5" />
+      <point x="206.34523809523807" y="212.0" />
+      <point x="205.25" y="212.0" />
+      <point x="205.25" y="54.0" />
+      <point x="179.0" y="54.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="384.0" y="233.0" />
   <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>

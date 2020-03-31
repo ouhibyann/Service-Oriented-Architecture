@@ -1,4 +1,4 @@
-# OUHIB_SOA
+# OUHIB_SOA - Finished 31/03/2020
 
 This project is a webapp microservices project with the following components :
 - "ms-membership", allowing to register, update, select and delete a client thanks to an API with JSON format request.
@@ -12,20 +12,20 @@ A component diagram is also available for a better understanding of the whole ap
 
 # Docker build and run
 
-    * ms-basket : 
-        docker build -t ms-basket .
-        docker run -d -p 9090:8090 ms-basket 
-    * ms-membership :
-        docker build -t ms-membership
-        docker run -d -p 9070:8070 ms-membership
-    * ms-product :
-        docker build -t ms-product
-        docker run -d -p 9060:8060 ms-product
+  * ms-basket : 
+     `docker build -t ms-basket .`
+     `docker run -d -p 9090:8090 ms-basket` 
+  * ms-membership :
+      `docker build -t ms-membership`
+      `docker run -d -p 9070:8070 ms-membership`
+  * ms-product :
+      `docker build -t ms-product`
+      `docker run -d -p 9060:8060 ms-product`
 
 # Curl API with Postman
 
-Packages will be provided - external - with the project to test the all the services via Postman.
-Warning !!! The provided requests are written with my own docker deamon IP address (192.168.99.100), you should replace it with your own IP address.
+Packages will be provided upon request - external - with the project to test the all the services via Postman.
+**Warning !!!** The provided requests are written with my own docker deamon IP address (192.168.99.100), you should replace it with your own IP address.
 
 # Running Tests
 

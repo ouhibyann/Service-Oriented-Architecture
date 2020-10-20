@@ -24,7 +24,7 @@ A component diagram is also available for a better understanding of the whole ap
 
 # Curl API with Postman
 
-Packages will be provided upon request - external - with the project to test the all the services via Postman.
+Package sare provided in .JSON format with the project to test the all the services via Postman.
 **Warning !!!** The provided requests are written with my own docker deamon IP address (192.168.99.100), you should replace it with your own IP address.
 
 # Running Tests

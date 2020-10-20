@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8979971f-e198-474c-8d09-6d1971a2b82b",
+		"name": "ms-product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ms-product getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/character",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"character"
+					]
+				},
+				"description": "get the full list of mocked product"
+			},
+			"response": []
+		},
+		{
+			"name": "ms-product getProduct1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.99.100:9060/ms-product/products/product1",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9060",
+					"path": [
+						"ms-product",
+						"products",
+						"product1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ms-product getProduct2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.99.100:9060/ms-product/products/product2",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9060",
+					"path": [
+						"ms-product",
+						"products",
+						"product2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ms-product getProduct3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.99.100:9060/ms-product/products/product3",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9060",
+					"path": [
+						"ms-product",
+						"products",
+						"product3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "bb75ce52-af3d-4c2d-8a88-d1e552ab53fd",
+		"name": "ms-basket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ms-basket getAll",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a6bb1493-2c8a-4fd0-9a07-a0d94c22067b",
+						"exec": [
+							"{",
+							"    \"123@hotmail.fr\",",
+							"    \"yann\",",
+							"    \"magic\",",
+							"    23,",
+							"    \"azerty\",",
+							"    [\"ADMIN\"]",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"123@hotmail.fr\",\n    \"firstname\" : \"yann\",\n    \"lastname\" : \"magic\",\n    \"age\" : 23,\n    \"password\" : \"azerty\",\n    \"authorities\" : [\"ADMIN\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.99.100:9090/ms-basket/baskets",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9090",
+					"path": [
+						"ms-basket",
+						"baskets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ms-basket add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a6bb1493-2c8a-4fd0-9a07-a0d94c22067b",
+						"exec": [
+							"{",
+							"    \"123@hotmail.fr\",",
+							"    \"yann\",",
+							"    \"magic\",",
+							"    23,",
+							"    \"azerty\",",
+							"    [\"ADMIN\"]",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"basketId\": 1,\n    \"customerId\": \"1\",\n    \"totalAmount\": 23.50,\n    \"products\": [\n    \t{\n    \t\t\"productId\": 1,\n    \t\t\"label\": \"souris\",\n    \t\t\"unitPrice\": 23.50\n    \t}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.99.100:9090/ms-basket/",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9090",
+					"path": [
+						"ms-basket",
+						""
+					]
+				},
+				"description": "You can add a basket via a JSON - an example is provided."
+			},
+			"response": []
+		},
+		{
+			"name": "ms-basket update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"basketId\": 1,\r\n\t\"customerId\": \"1\",\r\n\t\"totalAmount\": 33.75,\r\n\t\"products\": [\r\n\t    {\r\n\t        \"productId\": 2,\r\n\t        \"label\": \"sauce\",\r\n\t        \"unitPrice\": 16.875\r\n\t    }\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.99.100:9090/ms-basket/1",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9090",
+					"path": [
+						"ms-basket",
+						"1"
+					]
+				},
+				"description": "Used to update a basket via its id.\nOne example is given with basketId1 :\nlocalhost:8090/ms-basket/1"
+			},
+			"response": []
+		},
+		{
+			"name": "ms-membership delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "192.168.99.100:9090/ms-basket/1",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9090",
+					"path": [
+						"ms-basket",
+						"1"
+					]
+				},
+				"description": "Used to delete a basket via its Id\nOne example is set :\nlocalhost:8090/ms-basket/1"
+			},
+			"response": []
+		},
+		{
+			"name": "ms-basket getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.99.100:9090/ms-basket/basket/1",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"100"
+					],
+					"port": "9090",
+					"path": [
+						"ms-basket",
+						"basket",
+						"1"
+					]
+				},
+				"description": "Get a cart via its id.\nAn example is given via the following URL but remember to create a basket before !\nlocalhost:8090/ms-basket/basket/1"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
